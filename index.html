@@ -14,10 +14,10 @@
 <body>
     <!-- header start -->
     <header class="container">
-        <nav class="navbar mb-5 navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png">
+                <a class="navbar-brand" href="#home">
+                    <img id="home" src="images/logo.png">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -30,13 +30,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#submit">Subscribe</a>
                         </li>
                 </div>
             </div>
@@ -135,7 +135,7 @@
             </div>
         </section>
         <!-- Shoes -->
-        <section class="container mb-5">
+        <section id="shoes" class="container mb-5">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -188,7 +188,8 @@
                 </div>
             </div>
         </section>
-        <section class="container mb-5">
+        <!-- bags -->
+        <section id="backpack" class="container mb-5">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -242,9 +243,16 @@
                 </div>
             </div>
         </section>
+        <!-- submit -->
+        <section id="submit" class="container text-center mb-5 p-5 rounded-3" style="background-color: #fceae8;">
+            <h2>LET'S STAY IN TOUCH</h2>
+            <p>Get updates on sales, specials and more</p>
+            <input type="text" class="d-block ms-auto me-auto mb-2 pe-5" placeholder="Your Number">
+            <button class="btn text-white" style="background-image:linear-gradient(#ff4d94,#ff1f76);">submit</button>
+        </section>
     </main>
-    <footer>
-
+    <footer class="text-center">
+        <small>&copy;2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small>
     </footer>
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
