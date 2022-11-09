@@ -9,7 +9,7 @@ backPack.style.display = 'inline';
 
 const cards = document.getElementsByClassName('change-radious');
 for (let card of cards){
-    card.style.borderRadius = '10px'
+    card.style.borderRadius = '10px';
 }
 
 const headPhone = document.getElementById('headPhone');
@@ -57,11 +57,18 @@ inputSubmit.addEventListener('keyup', function(){
 
 const changeImg = document.getElementById('change-img');
 
-changeImg.addEventListener('mouseenter', function(){
-    changeImg.style.display = 'none'
+changeImg.addEventListener('mouseover', function(){
+    changeImg.style.display = 'none';
     const img = document.createElement('img');
     img.setAttribute('src', "images/shoes/shoe-2.png");
     img.setAttribute('class', 'card-img-top');
     const appendImg = document.getElementById('append-img');
     appendImg.appendChild(img);
+})
+
+const submitSec = document.getElementById('submit');
+submitSec.addEventListener('click', function(){
+    submitSec.addEventListener('click', function(){
+        submitSec.style.backgroundColor = 'lavender';
+    })
 })
