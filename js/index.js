@@ -65,4 +65,3 @@ changeImg.addEventListener('mouseenter', function(){
     const appendImg = document.getElementById('append-img');
     appendImg.appendChild(img);
 })
-
