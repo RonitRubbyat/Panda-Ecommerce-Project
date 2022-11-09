@@ -54,3 +54,15 @@ inputSubmit.addEventListener('keyup', function(){
         document.getElementById('submitBtn').setAttribute('disabled', true);
     }
 })
+
+const changeImg = document.getElementById('change-img');
+
+changeImg.addEventListener('mouseenter', function(){
+    changeImg.style.display = 'none'
+    const img = document.createElement('img');
+    img.setAttribute('src', "images/shoes/shoe-2.png");
+    img.setAttribute('class', 'card-img-top');
+    const appendImg = document.getElementById('append-img');
+    appendImg.appendChild(img);
+})
+
